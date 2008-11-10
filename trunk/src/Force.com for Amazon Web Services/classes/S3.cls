@@ -176,7 +176,7 @@ public class S3 {
 		public string secret { get; set; }
 		public string key { get; set; }
 	    public String endpoint_x = 'https://s3.amazonaws.com/soap';
-        public Map<String,String> inputHttpHeaders_x;
+        public Map<String,String> inputHttpHeaders_x = new Map<String, String>(); { inputHttpHeaders_x.put('User-Agent', 'Force-s3-v1'); }
         public Map<String,String> outputHttpHeaders_x;
         public String clientCert_x;
         public String clientCertPasswd_x;
